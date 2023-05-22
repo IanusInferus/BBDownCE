@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+ 
+  "name": "Bilibili Downloader",
+  "description": "Generate BBDown command to download Bilibili video",
+  "version": "1.0",
+
+  "action":{
+    "default_icon": "icon.png",
+    "default_popup": "index.html",
+    "default_title": "Bilibili Downloader"
+  },
+
+  "permissions": [
+    "activeTab",
+    "cookies"
+  ],
+  "host_permissions": [
+    "*://*.bilibili.com/"
+  ]
+}
