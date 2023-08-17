@@ -10,7 +10,7 @@ if (!url.match(regex)) {
 }
 var cookies = await chrome.cookies.getAll({domain: ".bilibili.com"});
 var all = cookies.map(c => c.name + "=" + c.value).join("; ");
-document.querySelector("#result").innerText = "BBDown.exe -c \"" + all + "\" " + url.split("?")[0];
+document.querySelector("#result").innerText = "BBDown.exe -c \"" + all + "\" \"" + url + "\"";
 
 document.querySelector("#button_copy").onclick = () => {
   navigator.clipboard.writeText(document.querySelector("#result").innerText);
